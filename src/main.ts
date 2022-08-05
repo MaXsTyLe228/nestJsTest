@@ -2,8 +2,6 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import * as mongoose from "mongoose";
 import { createPosts } from "./db/seed";
-
-const Post = require('./db/model/post')
 //createPosts()
 
 const connect = mongoose.connect(process.env.MONGO_URI)
